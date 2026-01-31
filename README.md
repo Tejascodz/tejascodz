@@ -1,3 +1,3 @@
 
 
-📫 Reach me at: tejas@gmail.com
+📫 Reach me at: s7.tejas@gmail.com
