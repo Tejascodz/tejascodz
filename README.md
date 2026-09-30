@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="assets/header.svg" alt="Tejas - AI Engineer" width="100%"/>
+<img src="header.svg" alt="Tejas - AI Engineer" width="100%"/>
 
 <br/>
 
-<img src="assets/terminal.svg" alt="terminal intro" width="80%"/>
+<img src="terminal.svg" alt="terminal intro" width="80%"/>
 
 </div>
 
@@ -52,4 +52,4 @@ I like the place where new models meet real hardware and real roads.
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=linkedin&logoColor=00e5ff)](YOUR_LINKEDIN_URL)
 -->
 
-<img src="assets/footer.svg" width="100%" alt=""/>
+<img src="footer.svg" width="100%" alt=""/>
