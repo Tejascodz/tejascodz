@@ -33,14 +33,9 @@ I'm an **AI Engineer** working on computer vision, deep learning and perception.
 
 <img src="awards.svg" alt="Achievements: ISRO and NSIL Startup Challenge 1st Prize, Vishwakarma Awards 2025 Rank 11 of 1,054, AICTE Inventors Challenge Top 30 of 2,765, HPAIR 2026 delegate" width="100%"/>
 
-## 📊 GitHub Stats
+## 📊 Impact in numbers
 
-<div align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=Tejascodz&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117"/>
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Tejascodz&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117"/>
-
-</div>
+<img src="stats.svg" alt="Impact: 92% localization accuracy within 5 cm, about 90% lower cost, 87% gesture accuracy, 40% less testing time" width="100%"/>
 
 ## 📬 Let's build something
 
