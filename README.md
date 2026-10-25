@@ -1,44 +1,40 @@
-<div align="center">
+## Tejas S
 
-<img src="header.svg" alt="Tejas S - AI Engineer, Computer Vision and Perception" width="100%"/>
+AI Engineer, computer vision · Bengaluru, India
 
-<br/>
+I build computer vision systems that work on real-world video, from data labelling and model training to
+tracking, calibration and production deployment. Currently at **The Clutch Sports**, where I built the vision
+engine behind automated match analytics across four sports. Previously ADAS perception at Dots Autonomous,
+aerospace sensing at CSIR-NAL, and test automation for space-grade electronics at Spacechips.
 
-<img src="terminal.svg" alt="Terminal intro: Tejas S, AI Engineer in Bengaluru" width="80%"/>
+### Selected projects
 
-<br/><br/>
+| Project | Description |
+|---|---|
+| [**Drishti**](https://github.com/Tejascodz/drishti) | Number plate recognition for Indian roads and multi-lane free-flow tolling. Trained YOLO26 plate detector (96.1% recall, 97.5% precision), slot OCR with Indian-format decoding, multi-frame fusion and a VLM-assisted review loop. |
+| [**OpenRoad-Autonomy**](https://github.com/Tejascodz/OpenRoad-Autonomy) | Delivery robot fleet on real OpenStreetMap roads: ALT, A\*, D\* Lite and Dijkstra planning, velocity-profiled trajectories, battery-aware dispatch and a live control center with a hardened API. |
+| [**Pramana**](https://github.com/Tejascodz/pramana) | AI assurance tool that tests ML models and LLM applications for fairness, drift, privacy and prompt injection, with evidence mapped to NIST AI RMF, ISO/IEC 42001 and the EU AI Act. |
+| AI terrain rover | Semi-autonomous rover with LiDAR terrain mapping and terrain classification on Jetson Nano. Presented at CICCS-25. |
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=linkedin&logoColor=00e5ff)](https://www.linkedin.com/in/tejas-s-57298325a/)
-[![Email](https://img.shields.io/badge/s7.tejas@gmail.com-0d1117?style=for-the-badge&logo=gmail&logoColor=ff5ea8)](mailto:s7.tejas@gmail.com)
+### Experience
 
-</div>
+- **AI Engineer**, The Clutch Sports · 2026 – present
+- **AI Engineering Intern**, Dots Autonomous · 2025
+- **Research Intern**, CSIR-National Aerospace Laboratories · 2025
+- **Automation Engineer Intern**, Spacechips Ltd (UK, remote) · 2024
 
-<br/>
+### Technical focus
 
-## ⚡ About
+Python, C++ · PyTorch, OpenCV, YOLO, ONNX Runtime · detection, segmentation, OCR, pose estimation,
+multi-object tracking, camera calibration · LLM evaluation and RAG · Jetson, STM32, ESP32
 
-I'm an **AI Engineer** working on computer vision, deep learning and perception. I build production systems that turn raw video into structured, metric insight, and I've worked across **ADAS**, **aerospace** and **space-grade electronics**. I like the place where new models meet real hardware and real roads.
+### Recognition
 
-<img src="skills.svg" alt="Skills: Python, PyTorch, OpenCV, YOLO, Embedded C, Linux, Git, Jetson, STM32, ESP32, Raspberry Pi" width="100%"/>
+- 1st Prize, ISRO & NSIL Startup Challenge (2024)
+- Rank 11 of 1,054 teams across SAARC, Vishwakarma Awards (2025)
+- Top 25 nationally, AICTE Inventors Challenge (2024)
+- Delegate, Harvard College HPAIR Conference (2026)
 
-## 💼 Experience
+### Contact
 
-<img src="work.svg" alt="Experience: AI Engineer at Clutch, AI Engineering Intern at Dots Autonomous, Research Intern at CSIR-NAL, Automation Engineer Intern at Spacechips" width="100%"/>
-
-## 🔬 Projects
-
-<img src="projects.svg" alt="Projects: OpenRoad-Autonomy, AI Rough-Terrain Rover, Smart Glove for Sign Language Translation" width="100%"/>
-
-## 🏆 Achievements
-
-<img src="awards.svg" alt="Achievements: ISRO and NSIL Startup Challenge 1st Prize, Vishwakarma Awards 2025 Rank 11 of 1,054, AICTE Inventors Challenge Top 30 of 2,765, HPAIR 2026 delegate" width="100%"/>
-
-## 📊 Impact in numbers
-
-<img src="stats.svg" alt="Impact: 92% localization accuracy within 5 cm, about 90% lower cost, 87% gesture accuracy, 40% less testing time" width="100%"/>
-
-## 📬 Let's build something
-
-Open to conversations about perception, autonomy and edge AI. Reach me at **s7.tejas@gmail.com** or on [LinkedIn](https://www.linkedin.com/in/tejas-s-57298325a/).
-
-<img src="footer.svg" width="100%" alt=""/>
+[LinkedIn](https://www.linkedin.com/in/tejas-s-57298325a/) · s7.tejas@gmail.com
