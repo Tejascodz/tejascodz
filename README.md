@@ -11,10 +11,10 @@ aerospace sensing at CSIR-NAL, and test automation for space-grade electronics a
 
 | Project | Description |
 |---|---|
-| [**Drishti**](https://github.com/Tejascodz/drishti) | Number plate recognition for Indian roads and multi-lane free-flow tolling. Trained YOLO26 plate detector (96.1% recall, 97.5% precision), slot OCR with Indian-format decoding, multi-frame fusion and a VLM-assisted review loop. |
-| [**OpenRoad-Autonomy**](https://github.com/Tejascodz/OpenRoad-Autonomy) | Delivery robot fleet on real OpenStreetMap roads: ALT, A\*, D\* Lite and Dijkstra planning, velocity-profiled trajectories, battery-aware dispatch and a live control center with a hardened API. |
-| [**Pramana**](https://github.com/Tejascodz/pramana) | AI assurance tool that tests ML models and LLM applications for fairness, drift, privacy and prompt injection, with evidence mapped to NIST AI RMF, ISO/IEC 42001 and the EU AI Act. |
 | [**AI Terrain Rover**](https://github.com/Tejascodz/AI-Based-Rough-Terrain-Rover-for-Search-Reconnaissance) | Semi-autonomous six-wheel rocker-bogie rover with LiDAR terrain mapping, AI terrain classification and a live telemetry dashboard. Presented at CICCS-25. |
+| [**Pramana**](https://github.com/Tejascodz/pramana) | AI assurance tool that tests ML models and LLM applications for fairness, drift, privacy and prompt injection, with evidence mapped to NIST AI RMF, ISO/IEC 42001 and the EU AI Act. |
+| [**OpenRoad-Autonomy**](https://github.com/Tejascodz/OpenRoad-Autonomy) | Delivery robot fleet on real OpenStreetMap roads: ALT, A\*, D\* Lite and Dijkstra planning, velocity-profiled trajectories, battery-aware dispatch and a live control center with a hardened API. |
+| [**Drishti**](https://github.com/Tejascodz/drishti) | Number plate recognition for Indian roads and multi-lane free-flow tolling. Trained YOLO26 plate detector (96.1% recall, 97.5% precision), slot OCR with Indian-format decoding, multi-frame fusion and a VLM-assisted review loop. |
 
 ### Experience
 
