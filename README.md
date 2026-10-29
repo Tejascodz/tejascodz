@@ -13,6 +13,7 @@ aerospace sensing at CSIR-NAL, and test automation for space-grade electronics a
 |---|---|
 | [**AI Terrain Rover**](https://github.com/Tejascodz/AI-Based-Rough-Terrain-Rover-for-Search-Reconnaissance) | Semi-autonomous six-wheel rocker-bogie rover with LiDAR terrain mapping, AI terrain classification and a live telemetry dashboard. Presented at CICCS-25. |
 | [**Pramana**](https://github.com/Tejascodz/pramana) | AI assurance tool that tests ML models and LLM applications for fairness, drift, privacy and prompt injection, with evidence mapped to NIST AI RMF, ISO/IEC 42001 and the EU AI Act. |
+| [**Axon**](https://github.com/Tejascodz/Axon) | Condition-aware late-interaction retrieval for queries with many conditions. Training-free per-condition MaxSim scoring improves three ColBERT models on MultiConIR (+3 to +5 points, up to +11 on 10-condition queries), with a documented negative result for fuzzy-AND aggregation. |
 | [**OpenRoad-Autonomy**](https://github.com/Tejascodz/OpenRoad-Autonomy) | Delivery robot fleet on real OpenStreetMap roads: ALT, A\*, D\* Lite and Dijkstra planning, velocity-profiled trajectories, battery-aware dispatch and a live control center with a hardened API. |
 | [**Drishti**](https://github.com/Tejascodz/drishti) | Number plate recognition for Indian roads and multi-lane free-flow tolling. Trained YOLO26 plate detector (96.1% recall, 97.5% precision), slot OCR with Indian-format decoding, multi-frame fusion and a VLM-assisted review loop. |
 
