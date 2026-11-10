@@ -19,6 +19,7 @@ Reach me on [LinkedIn](https://www.linkedin.com/in/tejas-s-57298325a/) or at s7.
 
 | Project | Description |
 |---|---|
+| [**Industrial AI Guardian**](https://github.com/Tejascodz/industrial-ai-guardian) | Monitors the transmitters behind an industrial soft sensor and tells a transmitter fault (and which one) apart from a real process fault, a regime change or a data-integrity attack. On a closed-loop Tennessee Eastman simulation it detects 94% of events at 0.29 false alarms per day, against 52 to 55% for limit-check and PCA baselines, names the faulty transmitter in 79% of cases, and detects all 42 replay, freeze and stealth attacks. Encrypted read-only OPC UA link, signed models, tamper-evident audit log and a live control-room HMI. |
 | [**AI Terrain Rover**](https://github.com/Tejascodz/AI-Based-Rough-Terrain-Rover-for-Search-Reconnaissance) | Semi-autonomous six-wheel rocker-bogie rover with LiDAR terrain mapping, AI terrain classification and a live telemetry dashboard. Presented at CICCS-25. |
 | [**Pramana**](https://github.com/Tejascodz/pramana) | AI assurance tool that tests ML models and LLM applications for fairness, drift, privacy and prompt injection, with evidence mapped to NIST AI RMF, ISO/IEC 42001 and the EU AI Act. |
 | [**Axon**](https://github.com/Tejascodz/Axon) | RAG system built from scratch on condition-aware ColBERT re-ranking. Re-ranking raises both-gold-in-top-5 on HotpotQA from 0.70 to 0.82; LoRA fine-tuning of Qwen3-4B adds +18 points exact match and lifts citation recall from 0.48 to 0.81; guardrails cut prompt-injection success from 10.5% to 0.5%, with zero cross-tenant leakage. vLLM and SGLang benchmarked on T4 GPUs (SGLang 1.8× throughput at 16 concurrent users). Pre-registered experiments with confidence intervals and documented negative results. |
@@ -35,7 +36,7 @@ Reach me on [LinkedIn](https://www.linkedin.com/in/tejas-s-57298325a/) or at s7.
 ### Technical focus
 
 Python, C++ · PyTorch, OpenCV, YOLO, ONNX Runtime · detection, segmentation, OCR, pose estimation,
-multi-object tracking, camera calibration · LLM evaluation, RAG, late-interaction retrieval (ColBERT), LLM serving (vLLM, SGLang), LoRA fine-tuning · Jetson, STM32, ESP32
+multi-object tracking, camera calibration · LLM evaluation, RAG, late-interaction retrieval (ColBERT), LLM serving (vLLM, SGLang), LoRA fine-tuning · process monitoring and fault isolation (virtual sensors, PCA), OPC UA, IEC 62443 · Jetson, STM32, ESP32
 
 ### Recognition
 
