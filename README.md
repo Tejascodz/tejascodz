@@ -13,7 +13,7 @@ re-ranking, multi-hop retrieval with LLM-written follow-up searches, LLM query e
 classifier and planted-document filters, tenant isolation, live index updates, LLM serving benchmarked on vLLM and
 SGLang, and LoRA fine-tuning, deployed with Docker, Prometheus and Grafana, all measured with pre-registered experiments on held-out data.
 
-**Open to work:** AI and computer vision engineering roles in Bengaluru, available from November 2026.
+**Open to work:** AI and computer vision engineering roles in Bengaluru,
 Reach me on [LinkedIn](https://www.linkedin.com/in/tejas-s-57298325a/) or at s7.tejas@gmail.com.
 
 ### Selected projects
