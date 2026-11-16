@@ -7,7 +7,9 @@ tracking, calibration and production deployment. Most recently at **The Clutch S
 engine behind automated match analytics across four sports. Previously ADAS perception at Dots Autonomous,
 aerospace sensing at CSIR-NAL, and test automation for space-grade electronics at Spacechips.
 
-**Currently working on:** [**Axon**](https://github.com/Tejascodz/Axon), a retrieval-augmented generation system
+**Currently working on:** [**FreeWidth**](https://github.com/Tejascodz/freewidth), a study of how many parallel
+LLM samples a GPU can run for close to the price of one, and how to schedule small-to-large model ladders around
+that, evaluated with pre-registered experiments on free Kaggle GPUs. Also [**Axon**](https://github.com/Tejascodz/Axon), a retrieval-augmented generation system
 built from scratch and run as a production service. It has hybrid ColBERT + BM25 search with condition-aware
 re-ranking, multi-hop retrieval with LLM-written follow-up searches, LLM query expansion, a prompt-injection
 classifier and planted-document filters, tenant isolation, live index updates, LLM serving benchmarked on vLLM and
@@ -17,6 +19,7 @@ SGLang, and LoRA fine-tuning, deployed with Docker, Prometheus and Grafana, all 
 
 | Project | Description |
 |---|---|
+| [**FreeWidth**](https://github.com/Tejascodz/freewidth) | Hardware-aware test-time compute for small LLMs. Measures each GPU's *free width*, the widest batch of parallel samples that stays within 1.25× the latency of one sample (16 for Qwen3.5-0.8B and 4 for Qwen3.5-4B on a T4), and runs small-to-large model ladders with in-batch early stopping and live verification by the larger model on a second GPU. Pre-registered evaluation on 300 GSM8K problems on two free Kaggle T4s: the two-GPU ladder halves median latency (19.3 s vs 40.2 s) and energy compared with the 4B model alone, at 6.3 points lower accuracy (89.3% vs 95.7%, Holm-corrected p < 0.001). Both pre-registered superiority claims failed and are reported as such, with the error traced to one acceptance rule. OpenAI-compatible server with authentication and request limits, 105 tests, CodeQL and dependency audits in CI. |
 | [**Industrial AI Guardian**](https://github.com/Tejascodz/industrial-ai-guardian) | Monitors the transmitters behind an industrial soft sensor and tells a transmitter fault (and which one) apart from a real process fault, a regime change or a data-integrity attack. On a closed-loop Tennessee Eastman simulation it detects 94% of events at 0.29 false alarms per day, against 52 to 55% for limit-check and PCA baselines, names the faulty transmitter in 79% of cases, and detects all 42 replay, freeze and stealth attacks. Encrypted read-only OPC UA link, signed models, tamper-evident audit log and a live control-room HMI. |
 | [**AI Terrain Rover**](https://github.com/Tejascodz/AI-Based-Rough-Terrain-Rover-for-Search-Reconnaissance) | Semi-autonomous six-wheel rocker-bogie rover with LiDAR terrain mapping, AI terrain classification and a live telemetry dashboard. Presented at CICCS-25. |
 | [**Pramana**](https://github.com/Tejascodz/pramana) | Open-source AI assurance tool that audits ML models, LLM applications and AI agents for fairness, drift, privacy, prompt injection and identity spoofing, and seals the evidence in a signed, hash-chained pack mapped to NIST AI RMF, ISO/IEC 42001 and the EU AI Act. Red-teamed a RAG loan assistant on Llama 3.2 3B over 1,000+ live calls in English, Hindi, Kannada and Tamil, including multi-turn and obfuscated attacks; guardrails cut attack success from 21% to 1.3%. Validated on ProPublica's COMPAS court data, where it reproduces the published racial error-rate gap within 3 points (42.3% vs 22.0% of Black and white defendants who did not reoffend labelled higher risk; published 44.9% vs 23.5%). Tests agents in a honeypot sandbox and through their LangChain or OpenTelemetry logs, audits web chat windows through a real browser, and opens results in an interactive viewer. 450+ tests, CodeQL and build-provenance attestation in CI. |
@@ -34,7 +37,7 @@ SGLang, and LoRA fine-tuning, deployed with Docker, Prometheus and Grafana, all 
 ### Technical focus
 
 Python, C++ · PyTorch, OpenCV, YOLO, ONNX Runtime · detection, segmentation, OCR, pose estimation,
-multi-object tracking, camera calibration · LLM evaluation and red-teaming, AI audit (fairness, privacy, NIST AI RMF, EU AI Act), RAG, late-interaction retrieval (ColBERT), LLM serving (vLLM, SGLang), LoRA fine-tuning, FastAPI, Docker, Prometheus, Grafana · process monitoring and fault isolation (virtual sensors, PCA), OPC UA, IEC 62443 · Jetson, STM32, ESP32
+multi-object tracking, camera calibration · LLM evaluation and red-teaming, AI audit (fairness, privacy, NIST AI RMF, EU AI Act), RAG, late-interaction retrieval (ColBERT), LLM serving (vLLM, SGLang), LoRA fine-tuning, test-time compute and inference benchmarking (Hugging Face Transformers, NVML energy, paired significance tests), FastAPI, Docker, Prometheus, Grafana · process monitoring and fault isolation (virtual sensors, PCA), OPC UA, IEC 62443 · Jetson, STM32, ESP32
 
 ### Recognition
 
