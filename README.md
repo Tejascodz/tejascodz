@@ -1,51 +1,70 @@
-## Tejas S
+<div align="center">
 
-AI Engineer, computer vision · Bengaluru, India
+# Tejas S
 
-I build computer vision systems that work on real-world video, from data labelling and model training to
-tracking, calibration and production deployment. Most recently at **The Clutch Sports**, where I built the vision
-engine behind automated match analytics across four sports. Previously ADAS perception at Dots Autonomous,
-aerospace sensing at CSIR-NAL, and test automation for space-grade electronics at Spacechips.
+**AI Engineer · Computer vision, LLM inference and industrial AI**
 
-**Currently working on:** [**FreeWidth**](https://github.com/Tejascodz/Freewidth), an inference engine that measures how
-many parallel LLM samples a GPU can run for close to the price of one and builds a two-GPU small-to-large model ladder
-around it, evaluated with pre-registered experiments on free Kaggle GPUs. Also [**Axon**](https://github.com/Tejascodz/Axon), a retrieval-augmented generation system
-built from scratch and run as a production service. It has hybrid ColBERT + BM25 search with condition-aware
-re-ranking, multi-hop retrieval with LLM-written follow-up searches, LLM query expansion, a prompt-injection
-classifier and planted-document filters, tenant isolation, live index updates, LLM serving benchmarked on vLLM and
-SGLang, and LoRA fine-tuning, deployed with Docker, Prometheus and Grafana, all measured with pre-registered experiments on held-out data.
+I take machine learning systems from research to production, and I measure them honestly on the way.
 
-### Selected projects
+Bengaluru, India · [LinkedIn](https://www.linkedin.com/in/tejas-s-57298325a/) · s7.tejas@gmail.com
 
-| Project | Description |
-|---|---|
-| [**FreeWidth**](https://github.com/Tejascodz/Freewidth) | Hardware-aware test-time compute for small LLMs. Measures each GPU's *free width*, the widest batch of parallel samples that stays within 1.25× the latency of one sample (16 for Qwen3.5-0.8B and 4 for Qwen3.5-4B on a T4, cost model R² 0.997), and runs a two-GPU ladder: the small model samples a free-width wave with in-batch early stopping while the larger model scores each finished answer in one forward pass and accepts, vetoes or takes over. On 300 GSM8K problems on two free Kaggle T4s it reaches 93.7% accuracy against 95.7% for the 4B model alone (difference not significant, Holm-corrected p = 0.21) at 1.9× lower median latency (20.9 s vs 40.2 s) and 44% less energy. The 90th-percentile latency is higher (74.6 s vs 62.0 s), and a same-session confirmation is still to run. The current acceptance rule came from an ablation after the first pre-registered run failed its superiority claims, which are reported as such. OpenAI-compatible server with authentication and request limits, 110+ tests, CodeQL and dependency audits in CI. |
-| [**Industrial AI Guardian**](https://github.com/Tejascodz/industrial-ai-guardian) | Monitors the transmitters behind an industrial soft sensor and tells a transmitter fault (and which one) apart from a real process fault, a regime change or a data-integrity attack. On a closed-loop Tennessee Eastman simulation it detects 94% of events at 0.29 false alarms per day, against 52 to 55% for limit-check and PCA baselines, names the faulty transmitter in 79% of cases, and detects all 42 replay, freeze and stealth attacks. Encrypted read-only OPC UA link, signed models, tamper-evident audit log and a live control-room HMI. |
-| [**AI Terrain Rover**](https://github.com/Tejascodz/AI-Based-Rough-Terrain-Rover-for-Search-Reconnaissance) | Semi-autonomous six-wheel rocker-bogie rover with LiDAR terrain mapping, AI terrain classification and a live telemetry dashboard. Presented at CICCS-25. |
-| [**Pramana**](https://github.com/Tejascodz/pramana) | Open-source AI assurance tool that audits ML models, LLM applications and AI agents for fairness, drift, privacy, prompt injection and identity spoofing, and seals the evidence in a signed, hash-chained pack mapped to NIST AI RMF, ISO/IEC 42001 and the EU AI Act. Red-teamed a RAG loan assistant on Llama 3.2 3B over 1,000+ live calls in English, Hindi, Kannada and Tamil, including multi-turn and obfuscated attacks; guardrails cut attack success from 21% to 1.3%. Validated on ProPublica's COMPAS court data, where it reproduces the published racial error-rate gap within 3 points (42.3% vs 22.0% of Black and white defendants who did not reoffend labelled higher risk; published 44.9% vs 23.5%). Tests agents in a honeypot sandbox and through their LangChain or OpenTelemetry logs, audits web chat windows through a real browser, and opens results in an interactive viewer. 450+ tests, CodeQL and build-provenance attestation in CI. |
-| [**Axon**](https://github.com/Tejascodz/Axon) | Production RAG system built from scratch on hybrid ColBERT + BM25 search with condition-aware re-ranking. On HotpotQA, both gold passages in the top 5 rise from 0.70 to 0.82 with re-ranking and to 0.88 with a second retrieval hop; LLM-written follow-up searches lift MuSiQue (all supporting passages in the top 10) from 0.38 to 0.53, and LLM query expansion lifts BRIGHT nDCG@10 from 0.16 to 0.26. LoRA fine-tuning of Qwen3-4B adds +18 points exact match and lifts citation recall from 0.48 to 0.81. Guardrails cut prompt-injection success from 10.5% to 0.5%, and a prompt-injection classifier cuts it from 5% to 0.25% on attacks no detector was tuned on; planted false documents go from 21% false answers to 0%; zero cross-tenant results in 4,400 hostile queries. Recall@100 0.96 at 300,000 passages, live index updates 96× faster than rebuilds, 99.8% success under sustained load. vLLM and SGLang benchmarked on T4 GPUs (SGLang 1.8× throughput at 16 concurrent users). Docker, Prometheus and Grafana, security scans and end-to-end tests in CI. Pre-registered experiments and held-out evaluation with confidence intervals and documented negative results. |
-| [**OpenRoad-Autonomy**](https://github.com/Tejascodz/OpenRoad-Autonomy) | Delivery robot fleet on real OpenStreetMap roads: ALT, A\*, D\* Lite and Dijkstra planning, velocity-profiled trajectories, battery-aware dispatch and a live control center with a hardened API. |
-| [**Drishti**](https://github.com/Tejascodz/drishti) | Number plate recognition for Indian roads and multi-lane free-flow tolling. Trained YOLO26 plate detector (96.1% recall, 97.5% precision), slot OCR with Indian-format decoding, multi-frame fusion and a VLM-assisted review loop. |
+</div>
+
+---
+
+### About
+
+Most recently I built the computer vision engine behind automated match analytics at **The Clutch Sports**: data labelling, model training, multi-player tracking, court calibration and event detection across four sports, with the first sport shipped to production. Before that I worked on ADAS perception at Dots Autonomous, aerospace sensing at CSIR-NAL, and test automation for space-grade electronics at Spacechips.
+
+On my own time I build open-source systems end to end, from the model to the server to the security review, and I evaluate them the way a research team would: held-out data, strong baselines, pre-registered experiments where it matters, and negative results reported as they are.
+
+### Now building: FreeWidth
+
+<a href="https://github.com/Tejascodz/Freewidth"><img src="https://raw.githubusercontent.com/Tejascodz/Freewidth/main/docs/figures/hero.png" width="100%" alt="FreeWidth: wall time versus parallel samples on a T4, and accuracy versus latency on GSM8K"></a>
+
+On a single-user GPU, several LLM samples cost almost the same wall time as one, up to a limit set by the model and the hardware. [**FreeWidth**](https://github.com/Tejascodz/Freewidth) measures that limit on each GPU and builds a two-GPU small-to-large model ladder around it. A 0.8B model samples in parallel and stops early once the answers agree, while a 4B model on the second GPU checks each answer in a single forward pass.
+
+<table>
+<tr>
+<td align="center" width="33%"><b>1.9×</b><br><sub>lower median latency</sub></td>
+<td align="center" width="33%"><b>44%</b><br><sub>less energy per question</sub></td>
+<td align="center" width="33%"><b>93.7% vs 95.7%</b><br><sub>accuracy, not significant</sub></td>
+</tr>
+</table>
+
+<sub>Compared with the 4B model alone on 300 GSM8K problems, using two free Kaggle T4s. The gap is not statistically significant (Holm-corrected p = 0.21), which does not prove equivalence; 90th-percentile latency is higher (74.6 s vs 62.0 s), and a same-session confirmation is still to run.</sub>
+
+### Selected work
+
+| Project | Area | Result |
+|---|---|---|
+| [**Axon**](https://github.com/Tejascodz/Axon) | Retrieval and RAG | A production RAG system built from scratch: hybrid ColBERT + BM25 search, condition-aware re-ranking and multi-hop retrieval. HotpotQA both-gold@5 from 0.70 to 0.88; prompt-injection success from 5% to 0.25% on attacks no detector was tuned on; zero cross-tenant results in 4,400 hostile queries. |
+| [**Industrial AI Guardian**](https://github.com/Tejascodz/industrial-ai-guardian) | Industrial AI | Tells a failing transmitter apart from a real process fault, a regime change or a cyber attack on a closed-loop Tennessee Eastman plant. Detects 94% of events against 52 to 55% for limit-check and PCA baselines, names the faulty transmitter 79% of the time, and catches all 42 attacks. |
+| [**Pramana**](https://github.com/Tejascodz/pramana) | AI assurance | Audits ML models, LLM apps and agents and seals the evidence in a hash-chained pack mapped to NIST AI RMF, ISO/IEC 42001 and the EU AI Act. Guardrails cut attack success from 21% to 1.3% over 1,000+ live calls in four languages; reproduces ProPublica's COMPAS error-rate gap within 3 points. |
+| [**Drishti**](https://github.com/Tejascodz/drishti) | Computer vision | Number plate recognition for Indian roads and free-flow tolling. YOLO26 plate detector at 96.1% recall and 97.5% precision, with format-aware OCR and multi-frame fusion. |
+| [**AI Terrain Rover**](https://github.com/Tejascodz/AI-Based-Rough-Terrain-Rover-for-Search-Reconnaissance) | Robotics | Six-wheel rocker-bogie rover with LiDAR terrain mapping and terrain segmentation, built in a team of four. Presented at CICCS-25; Rank 11 of 1,054 teams across SAARC. |
+| [**OpenRoad-Autonomy**](https://github.com/Tejascodz/OpenRoad-Autonomy) | Planning | Delivery robot fleet on real OpenStreetMap roads with ALT, A\*, D\* Lite and Dijkstra planning, battery-aware dispatch and a hardened control API. |
 
 ### Experience
 
-- **AI Engineer**, The Clutch Sports · 2026
-- **AI Engineering Intern**, Dots Autonomous · 2025
-- **Research Intern**, CSIR-National Aerospace Laboratories · 2025
-- **Automation Engineer Intern**, Spacechips Ltd (UK, remote) · 2024
+| Role | Company | Year | Focus |
+|---|---|---|---|
+| AI Engineer | The Clutch Sports | 2026 | Multi-sport video analytics; ball tracking at 98% F1, court segmentation at 99%+ mAP50 |
+| AI Engineering Intern | Dots Autonomous | 2025 | Monocular ADAS for automatic emergency braking: depth, tracking, time-to-collision |
+| Research Intern | CSIR-National Aerospace Laboratories | 2025 | Low-cost impact localisation on aerospace composites, 92% within 5 cm |
+| Instrumentation Engineer Intern | Spacechips Ltd (UK, remote) | 2024 | Automated testing of space-grade DC-DC converters over SCPI and VISA |
 
-### Technical focus
+### Toolbox
 
-Python, C++ · PyTorch, OpenCV, YOLO, ONNX Runtime · detection, segmentation, OCR, pose estimation,
-multi-object tracking, camera calibration · LLM evaluation and red-teaming, AI audit (fairness, privacy, NIST AI RMF, EU AI Act), RAG, late-interaction retrieval (ColBERT), LLM serving (vLLM, SGLang), LoRA fine-tuning, test-time compute and inference benchmarking (Hugging Face Transformers, NVML energy, paired significance tests), FastAPI, Docker, Prometheus, Grafana · process monitoring and fault isolation (virtual sensors, PCA), OPC UA, IEC 62443 · Jetson, STM32, ESP32
+- **Machine learning:** PyTorch, Hugging Face Transformers, scikit-learn, LoRA fine-tuning, CUDA
+- **Computer vision:** OpenCV, YOLO, ONNX Runtime, segmentation, OCR, pose estimation, multi-object tracking, camera calibration
+- **LLM systems:** RAG and late-interaction retrieval (ColBERT), vLLM, SGLang, test-time compute, evaluation and red-teaming
+- **Production:** Python, C++, FastAPI, Docker, Prometheus, Grafana, GitHub Actions, CodeQL
+- **Industrial and embedded:** process monitoring, virtual sensors, OPC UA, IEC 62443, Jetson, STM32, ESP32
 
 ### Recognition
 
-- 1st Prize, ISRO & NSIL Startup Challenge (2024)
-- Rank 11 of 1,054 teams across SAARC, Vishwakarma Awards (2025)
-- Top 25 nationally, AICTE Inventors Challenge (2024)
-- Delegate, Harvard College HPAIR Conference (2026)
-
-### Contact
-
-[LinkedIn](https://www.linkedin.com/in/tejas-s-57298325a/) · s7.tejas@gmail.com
+- **1st Prize**, ISRO & NSIL Startup Challenge (2024)
+- **Rank 11 of 1,054 teams** across SAARC, Vishwakarma Awards (2025)
+- **Top 25 nationally**, AICTE Inventors Challenge (2024)
+- **Delegate**, Harvard College HPAIR Conference (2026)
